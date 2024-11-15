@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Review Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <!-- Logo with each word in a span -->
+        <span class="logo">
+            <span class="logo-word">S</span>
+            <span class="logo-word">h</span>
+            <span class="logo-word">e</span>
+            <span class="logo-word">l</span>
+            <span class="logo-word">f</span>
+            <span class="logo-word space"> </span> <!-- This span represents the space -->
+            <span class="logo-word">T</span>
+            <span class="logo-word">a</span>
+            <span class="logo-word">l</span>
+            <span class="logo-word">k</span>
+            <span class="logo-word">e</span>
+            <span class="logo-word">r</span>
+        </span>
+        
+        
+        <!-- Hamburger Menu (only visible on mobile) -->
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+            <li><a href=""><span class="nav-word">Featured</span></a></li>
+            <li><a href=""><span class="nav-word">Discover</span></a></li>
+            <li><a href=""><span class="nav-word">OUR PRODUCT</span></a></li>
+        </ul>
+    
+        <!-- Search Bar -->
+        <div class="search-container">
+            <button class="search-button">
+                <img src="images/magnifying-glass.png" alt="Search" class="search-icon">
+            </button>
+            <input type="text" placeholder="SEARCH" class="search-input">
+        </div>
+    </nav>
+    
+    
+
+    <!-- Homepage Content -->
+    <section class="home">
+        <h1>Welcome to the Book Review Website</h1>
+
+        <div class="featured-books">
+            <h2>Featured Books</h2>
+            <div class="book-list" id="book-list">
+                <!-- Book cards will be injected here by JavaScript -->
+            </div>
+        </div>
+
+        <div class="categories">
+            <h2>Explore Genres</h2>
+            <ul>
+                <li><a href="/genre/fiction">Fiction</a></li>
+                <li><a href="/genre/nonfiction">Non-fiction</a></li>
+                <li><a href="/genre/sci-fi">Sci-Fi</a></li>
+                <li><a href="/genre/romance">Romance</a></li>
+                <!-- Add more genres here -->
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Your Book Review Website</p>
+        <div class="social-links">
+            <a href="https://facebook.com">Facebook</a>
+            <a href="https://twitter.com">Twitter</a>
+            <a href="https://instagram.com">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e7e7d0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%2386867f' fill-opacity='0.31'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+  
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* Logo Styling with span for each word */
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    display: flex;
+}
+
+/* .logo-word {
+    margin-right: 5px; /* Add some spacing between words *
+    position: relative; /* Position to allow absolute bubble effect *
+    transition: transform 0.3s ease, color 0.3s ease; /* Transition for scaling *
+}
+
+.logo-word:hover {
+    color: #ff9900; /* Optional hover effect for each word *
+    transform: scale(1.2); /* Scale up to create bubble effect *
+} */
+
+/* Logo Styling with span for each letter */
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Each logo letter in a span with background circle */
+.logo-word {
+    display: inline-block;
+    width: 40px; /* Set width for the circle */
+    height: 45px; /* Set height for the circle */
+    margin: 0 px; /* Space between letters */
+    text-align: center; /* Center text inside the circle */
+    line-height: 40px; /* Vertically center the letter */
+    border-radius: 50%; /* Make it a circle */
+    background-color: #4f3636; /* Background color of the circle */
+    color: white; /* Text color */
+    font-size: 21px; /* Text size inside the circle */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* For smooth scaling */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Horizontal, Vertical, Blur Radius, Color */
+}
+
+/* Adding a space between "Shelf" and "Talker" */
+.logo-word.space {
+    width: 10px; /* Adjust the width for spacing between words */
+    height: 0; /* No height needed */
+    background: none; /* No background color */
+    margin: 0 5px; /* Space between the word and the circle */
+}
+
+
+/* Hover effect for each letter - scaling and changing background color */
+.logo-word:hover {
+    transform: scale(1.2); /* Scale up when hovered */
+    background-color: #ff6600; /* Change the background color on hover */
+}
+
+/* Optional: Adjusting font size or color */
+.logo-word:hover {
+    color: #fff; /* Optional: Keep the text white when hovering */
+}
+
+/* Menu Button for Mobile */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* Navigation Links (Desktop View) */
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nav-links a:hover {
+    color: #ff9900;
+}
+
+/* Each navigation word in a span */
+.nav-word {
+    display: inline-block;
+    padding: 0.1rem 0.3rem;
+    position: relative;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav-word:hover {
+    color: #ff9900; /* Optional hover effect */
+    transform: scale(1.2); /* Scale up to create bubble effect */
+}
+
+/* Search Container */
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.search-input {
+    display: none;
+    padding: 0.5rem;
+    margin-left: 1rem;
+    border: 2px solid #ff9900;
+    border-radius: 5px;
+    background-color: white;
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        padding: 1rem 0;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Mobile Search Bar */
+    .search-input {
+        display: block;
+        margin-left: 1rem;
+        padding: 0.5rem;
+        width: 120px; /* Adjust width for mobile */
+    }
+
+    .search-container {
+        margin-left: 1rem;
+        order: -1; /* Move the search bar to the left in mobile */
+    }
+}
