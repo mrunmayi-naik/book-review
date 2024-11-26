@@ -25,7 +25,7 @@ body {
 .logo {
     font-size: 1.8rem;
     font-weight: bold;
-    color: white;
+    color: #333333 ;
     display: flex;
 }
 
@@ -59,9 +59,9 @@ body {
     text-align: center; /* Center text inside the circle */
     line-height: 40px; /* Vertically center the letter */
     border-radius: 50%; /* Make it a circle */
-    background-color: #4f3636; /* Background color of the circle */
-    color: white; /* Text color */
-    font-size: 21px; /* Text size inside the circle */
+    background-color: #283f28; /* Background color of the circle */
+    color: rgb(252, 250, 250); /* Text color */
+    font-size: 26px; /* Text size inside the circle */
     transition: transform 0.3s ease, background-color 0.3s ease; /* For smooth scaling */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Horizontal, Vertical, Blur Radius, Color */
 }
@@ -78,12 +78,12 @@ body {
 /* Hover effect for each letter - scaling and changing background color */
 .logo-word:hover {
     transform: scale(1.2); /* Scale up when hovered */
-    background-color: #ff6600; /* Change the background color on hover */
+    background-color: white; /* Change the background color on hover */
 }
 
 /* Optional: Adjusting font size or color */
 .logo-word:hover {
-    color: #fff; /* Optional: Keep the text white when hovering */
+    color: #283f28; /* Optional: Keep the text white when hovering */
 }
 
 /* Menu Button for Mobile */
@@ -110,7 +110,7 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: white;
+    color: #637e66;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -128,7 +128,7 @@ body {
 }
 
 .nav-word:hover {
-    color: #ff9900; /* Optional hover effect */
+    color: #2b3d28; /* Optional hover effect */
     transform: scale(1.2); /* Scale up to create bubble effect */
 }
 
@@ -194,3 +194,29 @@ body {
         order: -1; /* Move the search bar to the left in mobile */
     }
 }
+
+
+.main {
+    width: 100%;
+    height: auto; /* Set height to auto to scale with image */
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    padding: 70px;
+}
+
+.oval .img1 {
+    width: 450px;
+    height: auto; /* Maintain aspect ratio */
+    height: 250px;
+}
+
+.oval{
+    background-color: #f4eb70;
+    border-radius: 60%;
+    width: 600px;
+    height: 400px;
+}
+
+

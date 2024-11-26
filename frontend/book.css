@@ -1,0 +1,62 @@
+/* Customizing the navbar background color */
+.navbar {
+    background-color: #343a40 !important; /* Dark background */
+}
+
+/* Changing navbar text color */
+.navbar .nav-link, .navbar .navbar-brand {
+    color: #0e0e0e !important; /* Light text for contrast */
+}
+
+/* Change text color on hover */
+.navbar .nav-link:hover {
+    color: #ffc107 !important; /* Gold color on hover */
+}
+
+/* Customizing the dropdown menu */
+.dropdown-menu {
+    background-color: #495057 !important; /* Dark background for dropdown */
+}
+
+/* Dropdown items */
+.dropdown-item {
+    color: #f8f9fa !important;
+}
+
+/* Hover effect for dropdown items */
+.dropdown-item:hover {
+    background-color: #343a40 !important;
+    color: #ffc107 !important;
+}
+
+/* Customizing the search bar */
+.form-control {
+    border: 1px solid #ffc107; /* Gold border */
+    background-color: #212529; /* Dark background */
+    color: #f8f9fa; /* Light text */
+}
+
+/* Search button */
+.btn-outline-success {
+    color: #ffc107;
+    border-color: #ffc107;
+}
+
+/* Search button hover */
+.btn-outline-success:hover {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+/* Profile image size */
+.navbar .rounded-circle {
+    width: 32px;
+    height: 32px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 992px) {
+    .navbar-nav {
+        text-align: center;
+    }
+}
